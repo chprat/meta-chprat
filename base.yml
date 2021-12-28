@@ -1,0 +1,32 @@
+header:
+  version: 11
+machine: raspberrypi0-2w-64
+distro: poky
+defaults:
+  repos:
+    refspec: honister
+local_conf_header:
+  meta-chprat: |
+    INHERIT += "rm_work"
+repos:
+  meta-chprat:
+    path: "sources/meta-chprat"
+  meta-raspberrypi:
+    url: "https://git.yoctoproject.org/git/meta-raspberrypi"
+    path: "sources/meta-raspberrypi"
+    layers:
+      .:
+  meta-openembedded:
+    url: "https://git.openembedded.org/meta-openembedded"
+    path: "sources/meta-openembedded"
+    layers:
+      meta-networking:
+      meta-oe:
+      meta-python:
+  poky:
+    url: "https://git.yoctoproject.org/git/poky"
+    path: "sources/poky"
+    layers:
+      meta:
+      meta-poky:
+      meta-yocto-bsp:
