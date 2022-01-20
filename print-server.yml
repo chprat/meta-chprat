@@ -2,5 +2,6 @@ header:
   version: 11
   includes:
     - base.yml
-machine: raspberrypi0-2w-64
+machine: pictor
 target: pyxis-image
+
