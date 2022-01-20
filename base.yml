@@ -1,7 +1,7 @@
 header:
   version: 11
 machine: raspberrypi0-2w-64
-distro: poky
+distro: velaos
 defaults:
   repos:
     refspec: honister
