@@ -1,4 +1,5 @@
 build
+sources/meta-octoprint
 sources/meta-openembedded
 sources/meta-raspberrypi
 sources/poky

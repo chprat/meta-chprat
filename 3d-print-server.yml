@@ -1,0 +1,22 @@
+header:
+  version: 11
+  includes:
+    - base.yml
+machine: sculptor
+target: pyxis-image
+local_conf_header:
+  poky-meta: |
+    LICENSE_FLAGS_WHITELIST = "commercial_ffmpeg"
+repos:
+  meta-openembedded:
+    url: "https://git.openembedded.org/meta-openembedded"
+    path: "sources/meta-openembedded"
+    layers:
+      meta-perl:
+      meta-webserver:
+  meta-octoprint:
+    refspec: master
+    url: "https://github.com/dev-0x7C6/meta-octoprint.git"
+    path: "sources/meta-octoprint"
+    layers:
+      .:
