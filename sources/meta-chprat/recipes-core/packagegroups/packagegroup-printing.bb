@@ -5,3 +5,4 @@ LICENSE = "MIT"
 inherit packagegroup
 
 RDEPENDS:${PN}:append = " cups"
+RDEPENDS:${PN}:append = " samba"
