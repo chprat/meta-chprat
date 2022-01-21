@@ -3,3 +3,5 @@ SUMMMARY = "Packagegroup containing dependencies for a print server"
 LICENSE = "MIT"
 
 inherit packagegroup
+
+RDEPENDS:${PN}:append = " cups"
