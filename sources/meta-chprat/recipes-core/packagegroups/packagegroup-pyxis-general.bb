@@ -5,3 +5,4 @@ LICENSE = "MIT"
 inherit packagegroup
 
 RDEPENDS:${PN}:append = " wpa-supplicant"
+RDEPENDS:${PN}:append = " dhcpcd"
