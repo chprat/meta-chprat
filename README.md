@@ -2,6 +2,39 @@ This README file contains information on the contents of the meta-chprat layer.
 
 Please see the corresponding sections below for details.
 
+Repository preparation
+======================
+
+To not spread personal information and allow customization some files need to
+be adapted before being usable.
+
+WiFi configuration
+------------------
+
+Create a wpa_supplicant configuration file
+``sources/meta-chprat/recipes-connectivity/wpa-supplicant/wpa-supplicant/wpa_supplicant-wlan0.conf``
+with the following content:
+
+```
+ctrl_interface=/var/run/wpa_supplicant
+ctrl_interface_group=0
+update_config=1
+country=
+
+network={
+	ssid=
+	scan_ssid=1
+	psk=
+	key_mgmt=WPA-PSK
+}
+```
+
+Adjust the ``country``, ``ssid`` and ``psk`` (or the ``network`` section in
+general) values according to you needs.
+
+You can use the tool ``wpa_passphrase`` to generate an encrypted value for
+your passphrase, if you don't want to enter it as plain text.
+
 Build
 =====
 

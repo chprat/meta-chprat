@@ -3,3 +3,4 @@ sources/meta-octoprint
 sources/meta-openembedded
 sources/meta-raspberrypi
 sources/poky
+sources/meta-chprat/recipes-connectivity/wpa-supplicant/wpa-supplicant/wpa_supplicant-wlan0.conf
