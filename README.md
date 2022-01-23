@@ -35,6 +35,17 @@ general) values according to you needs.
 You can use the tool ``wpa_passphrase`` to generate an encrypted value for
 your passphrase, if you don't want to enter it as plain text.
 
+SSH paswordless connection
+--------------------------
+
+Create a authorized_keys file
+``sources/meta-chprat/recipes-skeleton/useradd/useradd-cpr/authorized_keys``
+and add as many SSH public key entries as you need to allow SSH
+authentification without a password.
+
+Use the tool ``ssh-keygen`` to generate a SSH key pair, in case you don't
+already have one.
+
 Build
 =====
 
