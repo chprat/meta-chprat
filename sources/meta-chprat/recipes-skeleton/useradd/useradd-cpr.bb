@@ -11,8 +11,8 @@ inherit useradd
 
 USERADD_PACKAGES = "${PN}"
 
-USERADD_PARAM:${PN} = "-s /bin/sh -g cpr cpr"
-GROUPADD_PARAM:${PN} = "cpr"
+USERADD_PARAM:${PN} = "-s /bin/sh -g cpr -G wheel cpr"
+GROUPADD_PARAM:${PN} = "cpr; wheel"
 
 do_install () {
     install -d -m 755 ${D}/home/
