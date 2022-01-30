@@ -3,3 +3,5 @@ SUMMMARY = "Packagegroup containing general dependencies"
 LICENSE = "MIT"
 
 inherit packagegroup
+
+RDEPENDS:${PN}:append = " wpa-supplicant"
