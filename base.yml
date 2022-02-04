@@ -30,3 +30,8 @@ repos:
       meta:
       meta-poky:
       meta-yocto-bsp:
+  meta-swupdate:
+    url: "https://github.com/sbabic/meta-swupdate.git"
+    path: "sources/meta-swupdate"
+    layers:
+      .:
