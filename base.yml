@@ -8,6 +8,7 @@ defaults:
 local_conf_header:
   meta-chprat: |
     INHERIT += "rm_work"
+    RPI_USE_U_BOOT = "1"
 repos:
   meta-chprat:
     path: "sources/meta-chprat"
